@@ -1,54 +1,11 @@
-# language: node_js
-# node_js:
-#   - "stable"
-# dist: focal
-# rvm:
-#   - 2.7.5
-# cache:
-#   bundler: false
-
-# before_install:
-  # - gem install bundler
-
-# before_deploy:
-#   - yes | gem update --system --force
-#   - gem install uri
-#   - gem install logger
-  # - gem install faraday-net_http -v '3.3.0'
-# before_deploy:
-#   - |
-#     if [[ -z "$GITHUB_TOKEN" ]]; then 
-#       echo "ERROR: GITHUB_TOKEN is missing. Please set it in Travis CI settings.";
-#       exit 1;
-#     else 
-#       echo "GITHUB_TOKEN is present.";
-#     fi
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN
-#   local_dir: build
-#   on:
-#     branch: main
 language: node_js
 node_js:
   - "stable"
 dist: focal
-
-before_install:
-  - echo "Forcefully disabling Ruby setup"
-  - rm -f Gemfile Gemfile.lock || true
-  - unset GEM_HOME GEM_PATH
-  - export BUNDLE_IGNORE_CONFIG=true
-
-cache:
-  bundler: false
-
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  cleanup: true
+  github_token: $github_token
   local_dir: build
-  keep_history: true
   on:
     branch: main
