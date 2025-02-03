@@ -1,4 +1,3 @@
-bundle gem gconf
 language: node_js
 node_js:
   - "stable"
