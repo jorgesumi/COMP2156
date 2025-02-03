@@ -2,14 +2,19 @@ language: node_js
 node_js:
   - "stable"
 dist: focal
-before_install:
-  - gem install bundler
+rvm:
+  - 2.7.5
+cache:
+  bundler: false
+
+# before_install:
+  # - gem install bundler
 
 # before_deploy:
 #   - yes | gem update --system --force
 #   - gem install uri
 #   - gem install logger
-  - gem install faraday-net_http -v '3.3.0'
+  # - gem install faraday-net_http -v '3.3.0'
 # before_deploy:
 #   - |
 #     if [[ -z "$GITHUB_TOKEN" ]]; then 
