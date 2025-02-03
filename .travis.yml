@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - "stable"
 dist: focal
-before_install:
-  - gem install bundler
+# before_install:
+#   - gem install bundler
 
 # before_deploy:
 #   - yes | gem update --system --force
@@ -12,7 +12,7 @@ before_install:
 #   - gem install faraday-net_http -v '3.3.0'
 deploy:
   provider: pages
-  cleanup: true
+  skip_cleanup: true
   github_token: $github_token
   local_dir: build
   on:
