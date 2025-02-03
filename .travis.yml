@@ -36,9 +36,10 @@ node_js:
 dist: focal
 
 before_install:
-  - echo "Disabling Ruby-specific setup"
+  - echo "Forcefully disabling Ruby setup"
   - rm -f Gemfile Gemfile.lock || true
-  - gem list | grep uri || true
+  - unset GEM_HOME GEM_PATH
+  - export BUNDLE_IGNORE_CONFIG=true
 
 cache:
   bundler: false
