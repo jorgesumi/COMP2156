@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "stable"
 dist: focal
-# before_install:
+before_install:
   - gem install bundler
 
 # before_deploy:
