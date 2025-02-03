@@ -9,7 +9,9 @@ before_deploy:
 #   - yes | gem update --system --force
 #   - gem install uri
 #   - gem install logger
-  - gem install faraday-net_http -v '3.3.0'
+  # - gem install faraday-net_http -v '3.3.0'
+  - if [ -z "$GITHUB_TOKEN" ]; then echo "GITHUB_TOKEN is missing"; exit 1; else echo "GITHUB_TOKEN found"; fi
+
 deploy:
   provider: pages
   skip_cleanup: true
