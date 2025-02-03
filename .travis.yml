@@ -3,7 +3,7 @@ node_js:
   - "stable"
 dist: focal
 # before_install:
-#   - gem install bundler
+  - gem install bundler
 
 # before_deploy:
 #   - yes | gem update --system --force
