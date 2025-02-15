@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jorgesumi/COMP2156.git/static/css/main.27ca76a1.css",
-    "main.js": "/jorgesumi/COMP2156.git/static/js/main.ff6cea3c.js",
-    "static/js/453.f27d8bf6.chunk.js": "/jorgesumi/COMP2156.git/static/js/453.f27d8bf6.chunk.js",
-    "index.html": "/jorgesumi/COMP2156.git/index.html",
-    "main.27ca76a1.css.map": "/jorgesumi/COMP2156.git/static/css/main.27ca76a1.css.map",
-    "main.ff6cea3c.js.map": "/jorgesumi/COMP2156.git/static/js/main.ff6cea3c.js.map",
-    "453.f27d8bf6.chunk.js.map": "/jorgesumi/COMP2156.git/static/js/453.f27d8bf6.chunk.js.map"
+    "main.css": "/COMP2156/static/css/main.27ca76a1.css",
+    "main.js": "/COMP2156/static/js/main.a3220f66.js",
+    "static/js/453.f27d8bf6.chunk.js": "/COMP2156/static/js/453.f27d8bf6.chunk.js",
+    "index.html": "/COMP2156/index.html",
+    "main.27ca76a1.css.map": "/COMP2156/static/css/main.27ca76a1.css.map",
+    "main.a3220f66.js.map": "/COMP2156/static/js/main.a3220f66.js.map",
+    "453.f27d8bf6.chunk.js.map": "/COMP2156/static/js/453.f27d8bf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27ca76a1.css",
-    "static/js/main.ff6cea3c.js"
+    "static/js/main.a3220f66.js"
   ]
 }
