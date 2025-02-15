@@ -2,6 +2,7 @@
   "name": "comp2156",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/jorgesumi/COMP2156.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,19 +13,23 @@
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {
-	  "extends": [
-		  "react-app",
-		  "react-app/jest"
-	  ]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-	  "production": [
-		  ">0.2%",
-		  "not dead",
-		  "not op_mini all"
-	  ]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -43,16 +48,7 @@
   "bugs": {
     "url": "https://github.com/jorgesumi/COMP2156/issues"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
