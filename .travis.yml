@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "stable"
+dist: focal
+deploy:
+  provider: pages
+  cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: main
