@@ -2,7 +2,7 @@
   "name": "comp2156",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/jorgesumi/COMP2156.git",
+  "homepage": "https://jorgesumi.github.io/COMP2156/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
